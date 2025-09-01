@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Kids Study App - Learn with Fun!</title>
+    <meta name="description" content="A fun and engaging study app for CBSE students with tips, tricks, and learning methods">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🎓 CBSE Study Buddy</h1>
+                <p>Learn with Fun!</p>
+            </div>
+            <nav class="nav" id="breadcrumb" style="display: none;">
+                <span class="breadcrumb-item active">Home</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Welcome Page -->
+        <section id="welcome-page" class="page active">
+            <div class="container">
+                <div class="welcome-content">
+                    <div class="hero">
+                        <h2>🌟 Welcome to Your Study Adventure! 🌟</h2>
+                        <p>Discover amazing tips and tricks to make learning fun and easy!</p>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">📚</div>
+                                <h3>Smart Tips</h3>
+                                <p>Memory techniques and easy learning methods</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">🎯</div>
+                                <h3>Fun Practice</h3>
+                                <p>Engaging exercises and activities</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">🏆</div>
+                                <h3>Quick Methods</h3>
+                                <p>Fast and effective study strategies</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-large" onclick="navigateTo('class-selection')">
+                            Start Learning! 🚀
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class Selection Page -->
+        <section id="class-selection" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h2>🎒 Choose Your Class</h2>
+                    <p>Select your class to get started with amazing study content!</p>
+                </div>
+                <div class="class-selection-grid">
+                    <div class="class-card available" onclick="selectClass(3)">
+                        <div class="class-number">3</div>
+                        <h3>Class 3</h3>
+                        <p>Age 7-9 years</p>
+                        <div class="subjects-preview">
+                            <span>English</span>
+                            <span>Math</span>
+                            <span>EVS</span>
+                            <span>Hindi</span>
+                        </div>
+                        <button class="btn btn-primary">Explore Class 3</button>
+                    </div>
+                    <div class="class-card coming-soon">
+                        <div class="class-number">4</div>
+                        <h3>Class 4</h3>
+                        <p>Coming Soon!</p>
+                        <button class="btn btn-disabled" disabled>Coming Soon</button>
+                    </div>
+                    <div class="class-card coming-soon">
+                        <div class="class-number">5</div>
+                        <h3>Class 5</h3>
+                        <p>Coming Soon!</p>
+                        <button class="btn btn-disabled" disabled>Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subject Selection Page -->
+        <section id="subject-selection" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h2>📖 Choose Your Subject</h2>
+                    <p>Pick a subject to discover amazing tips and tricks!</p>
+                </div>
+                <div class="subjects-grid" id="subjects-container">
+                    <!-- Subjects will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Content View Page -->
+        <section id="content-view" class="page">
+            <div class="container">
+                <div class="content-header">
+                    <h2 id="content-title">Subject Content</h2>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="🔍 Search tips and tricks...">
+                    </div>
+                </div>
+                <div class="content-categories" id="content-categories">
+                    <!-- Content categories will be populated by JavaScript -->
+                </div>
+                <div class="content-list" id="content-list">
+                    <!-- Content items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CBSE Study Buddy. Made with ❤️ for young learners!</p>
+        </div>
+    </footer>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

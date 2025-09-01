@@ -1,0 +1,25 @@
+{
+  "name": "cbse-kids-study-app",
+  "version": "1.0.0",
+  "description": "A comprehensive study application for CBSE board students with tips and tricks for learning different subjects",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "education",
+    "cbse",
+    "study",
+    "kids",
+    "learning",
+    "tips",
+    "tricks"
+  ],
+  "author": "CBSE Study App Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hmttech/study-app.git"
+  }
+}
